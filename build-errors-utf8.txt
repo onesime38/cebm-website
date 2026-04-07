@@ -1,0 +1,145 @@
+﻿
+> cebm@0.0.0 build
+> tsc -b && vite build
+
+src/App.tsx(10,6): error TS6196: 'Scholarship' is declared but never used.
+src/App.tsx(11,6): error TS6196: 'Responsable' is declared but never used.
+src/App.tsx(14,6): error TS6196: 'ScholarshipTab' is declared but never used.
+src/App.tsx(15,6): error TS6196: 'AdminSection' is declared but never used.
+src/App.tsx(16,6): error TS6196: 'ResponsableForm' is declared but never used.
+src/App.tsx(17,6): error TS6196: 'AdminForm' is declared but never used.
+src/App.tsx(21,10): error TS6133: 'getCityColor' is declared but its value is never read.
+src/App.tsx(111,55): error TS2345: Argument of type 'string' is not assignable to parameter of type 'Page'.
+src/App.tsx(124,57): error TS2345: Argument of type 'string' is not assignable to parameter of type 'Page'.
+src/App.tsx(212,46): error TS2345: Argument of type 'string' is not assignable to parameter of type 'Page'.
+src/App.tsx(236,9): error TS2740: Type '{}' is missing the following properties from type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", EventItem[]>': Rabat, F├¿s, Casablanca, Marrakech, and 3 more.
+src/App.tsx(245,58): error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<CityFilter>'.
+src/App.tsx(245,103): error TS7053: Element implicitly has an 'any' type because expression of type 'CityFilter' can't be used to index type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+  Property 'Toutes' does not exist on type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+src/App.tsx(253,85): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+  No index signature with a parameter of type 'string' was found on type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+src/App.tsx(258,42): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/App.tsx(258,61): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/App.tsx(259,236): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+  No index signature with a parameter of type 'string' was found on type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+src/App.tsx(279,28): error TS7031: Binding element 'event' implicitly has an 'any' type.
+src/App.tsx(279,35): error TS7031: Binding element 'setPage' implicitly has an 'any' type.
+src/App.tsx(285,47): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+src/App.tsx(287,38): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+src/App.tsx(307,29): error TS7031: Binding element 'scholarships' implicitly has an 'any' type.
+src/App.tsx(314,37): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/App.tsx(323,21): error TS7006: Parameter 'active' implicitly has an 'any' type.
+src/App.tsx(359,108): error TS2339: Property 'name' does not exist on type 'never'.
+src/App.tsx(361,51): error TS2339: Property 'status' does not exist on type 'never'.
+src/App.tsx(364,53): error TS2339: Property 'matricule' does not exist on type 'never'.
+src/App.tsx(364,91): error TS2339: Property 'status' does not exist on type 'never'.
+src/App.tsx(364,136): error TS2339: Property 'month' does not exist on type 'never'.
+src/App.tsx(364,171): error TS2339: Property 'amount' does not exist on type 'never'.
+src/App.tsx(371,29): error TS2339: Property 'status' does not exist on type 'never'.
+src/App.tsx(437,30): error TS7031: Binding element 'announcements' implicitly has an 'any' type.
+src/App.tsx(445,29): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/App.tsx(445,32): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/App.tsx(445,38): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/App.tsx(445,57): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/App.tsx(445,80): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/App.tsx(445,83): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/App.tsx(459,24): error TS7031: Binding element 'responsables' implicitly has an 'any' type.
+src/App.tsx(460,41): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/App.tsx(461,74): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/App.tsx(486,28): error TS7006: Parameter 'l' implicitly has an 'any' type.
+src/App.tsx(500,29): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/App.tsx(511,28): error TS7031: Binding element 'r' implicitly has an 'any' type.
+src/App.tsx(515,32): error TS7006: Parameter 'w' implicitly has an 'any' type.
+src/App.tsx(527,23): error TS7031: Binding element 'onLogin' implicitly has an 'any' type.
+src/App.tsx(552,30): error TS7031: Binding element 'responsables' implicitly has an 'any' type.
+src/App.tsx(552,44): error TS7031: Binding element 'setResponsables' implicitly has an 'any' type.
+src/App.tsx(559,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/App.tsx(562,15): error TS2339: Property 'name' does not exist on type '{}'.
+src/App.tsx(562,29): error TS2339: Property 'email' does not exist on type '{}'.
+src/App.tsx(563,52): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/App.tsx(563,75): error TS2339: Property 'id' does not exist on type 'never'.
+src/App.tsx(563,104): error TS2339: Property 'id' does not exist on type 'never'.
+src/App.tsx(564,88): error TS2339: Property 'isNational' does not exist on type '{}'.
+src/App.tsx(567,16): error TS7006: Parameter 'id' implicitly has an 'any' type.
+src/App.tsx(567,111): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/App.tsx(570,40): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/App.tsx(592,167): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+  No index signature with a parameter of type 'string' was found on type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+src/App.tsx(602,40): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+  No index signature with a parameter of type 'string' was found on type '{}'.
+src/App.tsx(607,35): error TS2339: Property 'city' does not exist on type '{}'.
+src/App.tsx(612,182): error TS2339: Property 'isNational' does not exist on type '{}'.
+src/App.tsx(613,56): error TS2339: Property 'isNational' does not exist on type '{}'.
+src/App.tsx(614,78): error TS2339: Property 'isNational' does not exist on type '{}'.
+src/App.tsx(640,29): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/App.tsx(645,48): error TS7006: Parameter 'w' implicitly has an 'any' type.
+src/App.tsx(651,83): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+src/App.tsx(676,47): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/App.tsx(690,27): error TS7031: Binding element 'events' implicitly has an 'any' type.
+src/App.tsx(690,35): error TS7031: Binding element 'announcements' implicitly has an 'any' type.
+src/App.tsx(690,50): error TS7031: Binding element 'scholarships' implicitly has an 'any' type.
+src/App.tsx(690,64): error TS7031: Binding element 'responsables' implicitly has an 'any' type.
+src/App.tsx(690,78): error TS7031: Binding element 'setEvents' implicitly has an 'any' type.
+src/App.tsx(690,89): error TS7031: Binding element 'setAnnouncements' implicitly has an 'any' type.
+src/App.tsx(690,107): error TS7031: Binding element 'setScholarships' implicitly has an 'any' type.
+src/App.tsx(690,124): error TS7031: Binding element 'setResponsables' implicitly has an 'any' type.
+src/App.tsx(690,141): error TS7031: Binding element 'onLogout' implicitly has an 'any' type.
+src/App.tsx(696,20): error TS7006: Parameter 'defaults' implicitly has an 'any' type.
+src/App.tsx(697,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/App.tsx(743,66): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/App.tsx(756,41): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/App.tsx(760,47): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/App.tsx(763,48): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+src/App.tsx(786,40): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+  No index signature with a parameter of type 'string' was found on type '{}'.
+src/App.tsx(790,48): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+  No index signature with a parameter of type 'string' was found on type '{}'.
+src/App.tsx(796,43): error TS2339: Property 'description' does not exist on type '{}'.
+src/App.tsx(800,79): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/App.tsx(800,102): error TS2339: Property 'id' does not exist on type 'never'.
+src/App.tsx(800,131): error TS2339: Property 'id' does not exist on type 'never'.
+src/App.tsx(808,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/App.tsx(811,85): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Record<"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir", string>'.
+src/App.tsx(816,70): error TS7006: Parameter 'ev' implicitly has an 'any' type.
+src/App.tsx(837,73): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+  No index signature with a parameter of type 'string' was found on type '{}'.
+src/App.tsx(842,41): error TS2339: Property 'message' does not exist on type '{}'.
+src/App.tsx(845,93): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/App.tsx(845,116): error TS2339: Property 'id' does not exist on type 'never'.
+src/App.tsx(845,145): error TS2339: Property 'id' does not exist on type 'never'.
+src/App.tsx(851,34): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/App.tsx(857,84): error TS7006: Parameter 'x' implicitly has an 'any' type.
+src/App.tsx(881,37): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+  No index signature with a parameter of type 'string' was found on type '{}'.
+src/App.tsx(886,41): error TS2339: Property 'status' does not exist on type '{}'.
+src/App.tsx(892,91): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/App.tsx(892,114): error TS2339: Property 'id' does not exist on type 'never'.
+src/App.tsx(892,143): error TS2339: Property 'id' does not exist on type 'never'.
+src/App.tsx(900,42): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/App.tsx(909,82): error TS7006: Parameter 'x' implicitly has an 'any' type.
+src/App.tsx(936,43): error TS2322: Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }[]' is not assignable to type 'EventItem[]'.
+  Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }' is not assignable to type 'EventItem'.
+    Types of property 'city' are incompatible.
+      Type 'string' is not assignable to type '"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir"'.
+src/App.tsx(936,107): error TS2322: Type 'Dispatch<SetStateAction<null>>' is not assignable to type '(event: EventItem) => void'.
+  Types of parameters 'value' and 'event' are incompatible.
+    Type 'EventItem' is not assignable to type 'SetStateAction<null>'.
+      Type 'EventItem' provides no match for the signature '(prevState: null): null'.
+src/App.tsx(937,47): error TS2322: Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }[]' is not assignable to type 'EventItem[]'.
+  Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }' is not assignable to type 'EventItem'.
+    Types of property 'city' are incompatible.
+      Type 'string' is not assignable to type '"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir"'.
+src/App.tsx(937,81): error TS2322: Type 'Dispatch<SetStateAction<null>>' is not assignable to type '(event: EventItem) => void'.
+  Types of parameters 'value' and 'event' are incompatible.
+    Type 'EventItem' is not assignable to type 'SetStateAction<null>'.
+      Type 'EventItem' provides no match for the signature '(prevState: null): null'.
+src/App.tsx(946,22): error TS2322: Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }[]' is not assignable to type 'EventItem[]'.
+  Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }' is not assignable to type 'EventItem'.
+    Types of property 'city' are incompatible.
+      Type 'string' is not assignable to type '"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir"'.
+src/App.tsx(946,86): error TS2322: Type 'Dispatch<SetStateAction<null>>' is not assignable to type '(event: EventItem) => void'.
+  Types of parameters 'value' and 'event' are incompatible.
+    Type 'EventItem' is not assignable to type 'SetStateAction<null>'.
+      Type 'EventItem' provides no match for the signature '(prevState: null): null'.
+src/App.tsx(951,36): error TS2322: Type 'string' is not assignable to type 'Page'.
+

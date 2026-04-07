@@ -1,0 +1,96 @@
+﻿
+> cebm@0.0.0 build
+> tsc -b && vite build
+
+src/App.tsx(702,113): error TS2345: Argument of type '{ id: number; title: string; city: "Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir"; date: string; time: string; location: string; description: string; image: string | null; } | { ...; } | { ...; } | { ...; }' is not assignable to parameter of type 'SetStateAction<AdminForm>'.
+  Type '{ id: number; title: string; city: City; date: string; time: string; location: string; description: string; image: string | null; }' is not assignable to type 'SetStateAction<AdminForm>'.
+    Type '{ id: number; title: string; city: City; date: string; time: string; location: string; description: string; image: string | null; }' is not assignable to type 'AdminForm'.
+      Property 'image' is incompatible with index signature.
+        Type 'string | null' is not assignable to type 'string | number | boolean | undefined'.
+          Type 'null' is not assignable to type 'string | number | boolean | undefined'.
+src/App.tsx(791,33): error TS2322: Type 'string | number | true' is not assignable to type 'string | number | readonly string[] | undefined'.
+  Type 'true' is not assignable to type 'string | number | readonly string[] | undefined'.
+src/App.tsx(795,41): error TS2322: Type 'string | number | true' is not assignable to type 'string | number | readonly string[] | undefined'.
+  Type 'true' is not assignable to type 'string | number | readonly string[] | undefined'.
+src/App.tsx(801,31): error TS2322: Type 'string | number | true' is not assignable to type 'string | number | readonly string[] | undefined'.
+  Type 'true' is not assignable to type 'string | number | readonly string[] | undefined'.
+src/App.tsx(805,68): error TS2345: Argument of type '(EventItem | { id: number; })[]' is not assignable to parameter of type 'EventItem[]'.
+  Type 'EventItem | { id: number; }' is not assignable to type 'EventItem'.
+    Type '{ id: number; }' is missing the following properties from type 'EventItem': title, city, date, time, and 3 more.
+src/App.tsx(805,159): error TS2322: Type 'EventItem | { id: number; }' is not assignable to type 'EventItem'.
+  Type '{ id: number; }' is missing the following properties from type 'EventItem': title, city, date, time, and 3 more.
+src/App.tsx(805,170): error TS2740: Type '{ id: number; }' is missing the following properties from type 'EventItem': title, city, date, time, and 3 more.
+src/App.tsx(842,66): error TS2322: Type 'string | number | true' is not assignable to type 'string | number | readonly string[] | undefined'.
+  Type 'true' is not assignable to type 'string | number | readonly string[] | undefined'.
+src/App.tsx(847,29): error TS2322: Type 'string | number | true' is not assignable to type 'string | number | readonly string[] | undefined'.
+  Type 'true' is not assignable to type 'string | number | readonly string[] | undefined'.
+src/App.tsx(850,75): error TS2345: Argument of type '(Announcement | { id: number; })[]' is not assignable to parameter of type 'Announcement[]'.
+  Type 'Announcement | { id: number; }' is not assignable to type 'Announcement'.
+    Type '{ id: number; }' is missing the following properties from type 'Announcement': title, message, date
+src/App.tsx(850,180): error TS2322: Type 'Announcement | { id: number; }' is not assignable to type 'Announcement'.
+  Type '{ id: number; }' is missing the following properties from type 'Announcement': title, message, date
+src/App.tsx(850,198): error TS2739: Type '{ id: number; }' is missing the following properties from type 'Announcement': title, message, date
+src/App.tsx(886,30): error TS2322: Type 'string | number | true' is not assignable to type 'string | number | readonly string[] | undefined'.
+  Type 'true' is not assignable to type 'string | number | readonly string[] | undefined'.
+src/App.tsx(891,29): error TS2322: Type 'string | number | true' is not assignable to type 'string | number | readonly string[] | undefined'.
+  Type 'true' is not assignable to type 'string | number | readonly string[] | undefined'.
+src/App.tsx(897,74): error TS2345: Argument of type '(Scholarship | { id: number; })[]' is not assignable to parameter of type 'Scholarship[]'.
+  Type 'Scholarship | { id: number; }' is not assignable to type 'Scholarship'.
+    Type '{ id: number; }' is missing the following properties from type 'Scholarship': matricule, name, status, month, amount
+src/App.tsx(897,177): error TS2322: Type 'Scholarship | { id: number; }' is not assignable to type 'Scholarship'.
+  Type '{ id: number; }' is missing the following properties from type 'Scholarship': matricule, name, status, month, amount
+src/App.tsx(897,194): error TS2739: Type '{ id: number; }' is missing the following properties from type 'Scholarship': matricule, name, status, month, amount
+src/App.tsx(941,43): error TS2322: Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }[]' is not assignable to type 'EventItem[]'.
+  Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }' is not assignable to type 'EventItem'.
+    Types of property 'city' are incompatible.
+      Type 'string' is not assignable to type '"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir"'.
+src/App.tsx(941,107): error TS2322: Type 'Dispatch<SetStateAction<null>>' is not assignable to type '(event: EventItem) => void'.
+  Types of parameters 'value' and 'event' are incompatible.
+    Type 'EventItem' is not assignable to type 'SetStateAction<null>'.
+      Type 'EventItem' provides no match for the signature '(prevState: null): null'.
+src/App.tsx(942,47): error TS2322: Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }[]' is not assignable to type 'EventItem[]'.
+  Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }' is not assignable to type 'EventItem'.
+    Types of property 'city' are incompatible.
+      Type 'string' is not assignable to type '"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir"'.
+src/App.tsx(942,81): error TS2322: Type 'Dispatch<SetStateAction<null>>' is not assignable to type '(event: EventItem) => void'.
+  Types of parameters 'value' and 'event' are incompatible.
+    Type 'EventItem' is not assignable to type 'SetStateAction<null>'.
+      Type 'EventItem' provides no match for the signature '(prevState: null): null'.
+src/App.tsx(944,59): error TS2322: Type '{ id: number; matricule: string; name: string; status: string; month: string; amount: string; }[]' is not assignable to type 'Scholarship[]'.
+  Type '{ id: number; matricule: string; name: string; status: string; month: string; amount: string; }' is not assignable to type 'Scholarship'.
+    Types of property 'status' are incompatible.
+      Type 'string' is not assignable to type 'ScholarshipStatus'.
+src/App.tsx(946,49): error TS2322: Type '{ id: number; name: string; role: string; city: string; email: string; phone: string; isNational: boolean; }[]' is not assignable to type 'Responsable[]'.
+  Type '{ id: number; name: string; role: string; city: string; email: string; phone: string; isNational: boolean; }' is not assignable to type 'Responsable'.
+    Types of property 'city' are incompatible.
+      Type 'string' is not assignable to type '"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir"'.
+src/App.tsx(949,25): error TS2322: Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }[]' is not assignable to type 'EventItem[]'.
+  Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }' is not assignable to type 'EventItem'.
+    Types of property 'city' are incompatible.
+      Type 'string' is not assignable to type '"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir"'.
+src/App.tsx(949,71): error TS2322: Type '{ id: number; matricule: string; name: string; status: string; month: string; amount: string; }[]' is not assignable to type 'Scholarship[]'.
+  Type '{ id: number; matricule: string; name: string; status: string; month: string; amount: string; }' is not assignable to type 'Scholarship'.
+    Types of property 'status' are incompatible.
+      Type 'string' is not assignable to type 'ScholarshipStatus'.
+src/App.tsx(949,99): error TS2322: Type '{ id: number; name: string; role: string; city: string; email: string; phone: string; isNational: boolean; }[]' is not assignable to type 'Responsable[]'.
+  Type '{ id: number; name: string; role: string; city: string; email: string; phone: string; isNational: boolean; }' is not assignable to type 'Responsable'.
+    Types of property 'city' are incompatible.
+      Type 'string' is not assignable to type '"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir"'.
+src/App.tsx(949,127): error TS2322: Type 'Dispatch<SetStateAction<{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }[]>>' is not assignable to type '(events: EventItem[]) => void'.
+  Types of parameters 'value' and 'events' are incompatible.
+    Type 'EventItem[]' is not assignable to type 'SetStateAction<{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }[]>'.
+      Type 'EventItem[]' is not assignable to type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }[]'.
+        Type 'EventItem' is not assignable to type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }'.
+          Types of property 'image' are incompatible.
+            Type 'string | null' is not assignable to type 'null'.
+              Type 'string' is not assignable to type 'null'.
+src/App.tsx(951,22): error TS2322: Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }[]' is not assignable to type 'EventItem[]'.
+  Type '{ id: number; title: string; city: string; date: string; time: string; location: string; description: string; image: null; }' is not assignable to type 'EventItem'.
+    Types of property 'city' are incompatible.
+      Type 'string' is not assignable to type '"Rabat" | "F├¿s" | "Casablanca" | "Marrakech" | "Oujda" | "Tanger" | "Agadir"'.
+src/App.tsx(951,86): error TS2322: Type 'Dispatch<SetStateAction<null>>' is not assignable to type '(event: EventItem) => void'.
+  Types of parameters 'value' and 'event' are incompatible.
+    Type 'EventItem' is not assignable to type 'SetStateAction<null>'.
+      Type 'EventItem' provides no match for the signature '(prevState: null): null'.
+src/App.tsx(956,36): error TS2322: Type 'string' is not assignable to type 'Page'.
+
