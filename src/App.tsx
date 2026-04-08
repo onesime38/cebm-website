@@ -43,9 +43,9 @@ const INITIAL_SCHOLARSHIPS: Scholarship[] = [
 ];
  
 const INITIAL_RESPONSABLES: Responsable[] = [
-  { id: 1, name: "Jean-Claude Niyonkuru", role: "Président CEBM", city: "Rabat", email: "president@cebm-maroc.org", phone: "+212 612 000 001", isNational: true },
-  { id: 2, name: "Aline Hakizimana", role: "Secrétaire Générale", city: "Casablanca", email: "secretariat@cebm-maroc.org", phone: "+212 612 000 002", isNational: true },
-  { id: 3, name: "Patrick Ndayishimiye", role: "Trésorier", city: "Fès", email: "tresorerie@cebm-maroc.org", phone: "+212 612 000 003", isNational: true },
+  { id: 1, name: "NSENGIYUMVA Nestor", role: "Président CEBM", city: "Rabat", email: "president@cebm-maroc.org", phone: "+212 719615717", isNational: true },
+  { id: 2, name: "NDIKURIYO Lionel", role: "Secrétaire Générale", city: "Casablanca", email: "secretariat@cebm-maroc.org", phone: "+212 655522490", isNational: true },
+  { id: 3, name: "NTIHEBUWAYO Zackarie", role: "Trésorier", city: "Fès", email: "tresorerie@cebm-maroc.org", phone: "+212 630681712", isNational: true },
   { id: 4, name: "Marie Uwamahoro", role: "Responsable Bourses", city: "Rabat", email: "bourses@cebm-maroc.org", phone: "+212 612 000 004", isNational: true },
   { id: 5, name: "Christian Niyomugabo", role: "Représentant ville", city: "Marrakech", email: "marrakech@cebm-maroc.org", phone: "+212 612 000 005", isNational: false },
   { id: 6, name: "Sandra Iradukunda", role: "Représentante ville", city: "Oujda", email: "oujda@cebm-maroc.org", phone: "+212 612 000 006", isNational: false },
