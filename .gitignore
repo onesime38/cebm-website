@@ -35,3 +35,6 @@ Desktop.ini
 *.njsproj
 *.sln
 *.sw?
+
+# Build error dumps
+build-errors*.txt

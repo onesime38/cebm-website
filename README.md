@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# CEBM — Communauté des Étudiants Burundais au Maroc
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site public et espace d'administration de la CEBM. Les visiteurs y consultent
+les événements, les annonces, la galerie, les contacts et les guides ; le
+bureau et les représentants de ville publient ce contenu.
 
-Currently, two official plugins are available:
+> **En cours de refonte.** Aujourd'hui, l'application tient dans
+> `src/App.tsx` et stocke les données dans le navigateur. La cible est une API
+> Vercel qui lit et écrit dans un Google Sheet et un dossier Google Drive
+> appartenant à l'association. Voir [`docs/ROADMAP.md`](docs/ROADMAP.md).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Prérequis
 
-## React Compiler
+- Node.js 22 (voir `.nvmrc`)
+- npm
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Démarrer
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev          # front-end seul sur http://localhost:5173
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Quand l'API existera (phase 1), le site complet se lancera avec
+`vercel dev` sur http://localhost:3000. Il faudra alors `vercel login`,
+`vercel link` et un fichier `.env.local` copié depuis `.env.example`
+(valeurs : [`docs/GOOGLE_SETUP.md`](docs/GOOGLE_SETUP.md)).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Commandes
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Commande | Rôle |
+|---|---|
+| `npm run dev` | serveur de développement Vite |
+| `npm run build` | vérification TypeScript + build de production dans `dist/` |
+| `npm run lint` | ESLint |
+| `npm run typecheck` | vérification TypeScript seule |
+| `npm test` | tests unitaires (Vitest) |
+| `npm run preview` | servir le build localement |
+
+`npm run lint`, `npm test` et `npm run build` doivent passer avant chaque commit.
+
+## Documentation
+
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — architecture, données, API
+- [`docs/ROADMAP.md`](docs/ROADMAP.md) — phases et tâches
+- [`docs/SECURITY.md`](docs/SECURITY.md) — règles et checklist de sécurité
+- [`docs/GOOGLE_SETUP.md`](docs/GOOGLE_SETUP.md) — configuration Google et Vercel
+- [`docs/WORKFLOW.md`](docs/WORKFLOW.md) — travailler avec Claude Code
+- [`CLAUDE.md`](CLAUDE.md) — conventions du projet
+
+## Contribuer
+
+Une tâche de la roadmap = une branche (`phase-0/cleanup`, …) = une pull
+request relue par l'autre développeur. Commits en
+[Conventional Commits](https://www.conventionalcommits.org/fr/), message en
+français. Ne jamais committer de fichier `.env*` (sauf `.env.example`).
